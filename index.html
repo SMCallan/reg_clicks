@@ -10,18 +10,24 @@
       border-radius: 5px;
       autoclose: 5000;
     }
+    p {
+      color: white;
+    }
   </style>
 </head>
 <body>
-  <div style="background-color: lightblue; width: 500px; height: 500px; border-radius: 5px;">
-    <p>A click a day keeps the doctor at bay!</p>
+  <div>
+    <p>Click me!</p>
   </div>
   <script>
     function clickHandler() {
-      alert("Blap!");
+      document.querySelector("p").style.color = "white";
+      document.querySelector("p").style.backgroundColor = "darkblue";
+      setTimeout(function() {
+        document.querySelector("p").style.display = "none";
+      }, 5000);
     }
     document.querySelector("div").addEventListener("click", clickHandler);
   </script>
 </body>
 </html>
-
