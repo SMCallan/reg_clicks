@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clicking All Day</title>
+</head>
+<body>
+  <div style="background-color: lightblue; width: 100px; height: 100px; border-radius: 5px;">
+    <p>Click me!</p>
+  </div>
+  <script>
+    function clickHandler() {
+      alert("Click!");
+    }
+    document.querySelector("div").addEventListener("click", clickHandler);
+  </script>
+</body>
+</html>
